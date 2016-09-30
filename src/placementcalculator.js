@@ -87,6 +87,9 @@ function PlacementCalculator() {
 				break;
 		}
 
+		if (coords.left < 0) {
+			coords.set('left', 0);
+		}
 		return coords;
 	}
 
